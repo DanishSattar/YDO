@@ -1,0 +1,19 @@
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Name</label>
+    <div class="col-md-5">
+      {{input value=model.name class="form-control"}}
+    </div>
+  </div>
+  <div class="form-group">
+      <label for="description" class=" col-md-2 control-label">Description</label>
+      <div class="col-md-5">
+        {{textarea value=model.description class='form-control'}}
+      </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <button {{action "createThing"}} class="btn btn-sm btn-primary">Save</button>
+   </div>
+ </div>
+</form>
